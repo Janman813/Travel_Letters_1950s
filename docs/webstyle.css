@@ -1,0 +1,22 @@
+
+body {
+background-color: BurlyWood;
+color: indigo;
+font-family: arial, helvetica, sans-serif;
+}
+ol {list-style-type: lower-alpha;
+padding: 5em;
+    
+}
+
+/*  ebb: These are CSS comments! The following rules style the "picture frame" HTML elements 
+ * and help control image size in a way that scales. We made the figure element be 30% of the width of the page.
+ * Then we controlled the width of the image **inside** the picture frame of the <figure>: it's allowed to fill 100% of the figure element, but can't get larger than 300 pixels.
+ * You can give any element a background-color property, so we are showing how to do it here.  */
+ 
+figure {background-color:lavender; margin:3em; width: 30%;} 
+figcaption {font-style:italic; font-size:.8em;}
+figure img {max-width:300px; width:100%;}
+/* Notice how the last rule is written: figure image {properties} . 
+ * The rule above controls the <img> element that is contained inside <figure>. 
+ * It does not control the size of the <img> that is not inside a <figure>. */
