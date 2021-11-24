@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../RelaxNGforThetravelProjects/France.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <!--images you're working with: which ones are page images and which ones are photos?
   Consider moving these so they sit with the parts of the transcription they connect to.
@@ -25,8 +26,7 @@
 
     <p n="1">Took a <transport>motor</transport> from travel agency-after <meal>breakfast</meal> in our fancy round sitting room. Drove all
         around <placeName>Paris</placeName> the driver named <persName><forename>Harvey</forename></persName> had a daughter named at <placeName>Waycross Georgia</placeName>. Went to
-        <placeName><forename>Lubin's</forename></placeName> for <misspelling word="perfume">perfrume</misspelling> (had the <item>pink flannel</item> affair that <persName><forename>Harriet</forename></persName> had given me- REsented') W
-        alked around the circle- <placeName>Place de Vandome</placeName> to
+        <placeName><forename>Lubin's</forename></placeName> for <misspelling word="perfume">perfrume</misspelling> (had the <item>pink flannel</item> affair that <persName><forename>Harriet</forename></persName> had given me- REsented') Walked around the circle- <placeName>Place de Vandome</placeName> to
             <placeName>Caron</placeName>, <placeName>The Ritz Hotel</placeName>, and a <placeName>jewellers</placeName>
         where I was intregued by a <item>Jewelled bird</item>. But did NOT get it! To a very nice resturant in
         the <placeName>Bois</placeName> for <meal>lunch</meal> <placeName>Le Pre Catalan</placeName>. Went then to both sides of the <placeName>Sien</placeName> and got some little
