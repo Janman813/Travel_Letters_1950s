@@ -1,0 +1,26 @@
+start = xml
+xml = element xml {letter}
+letter = element letter {text, hand, typeWritten}
+hand = element hand {pencil, pen+, text}
+typeWritten = element typeWritten {p+}
+pencil = element pencil {text}
+pen = element pen {mixed{(date, u+)}}
+date = element date {text}
+u = element u {text}
+p = element p {n, mixed{(transport | meal | persName | placeName | rewrite | merge | u | nationality | animal | language | misspelling | holiday)*}}
+n = attribute n {xsd:integer}
+transport = element transport {text}
+meal = element meal {text}
+persName = element persName {text}
+rewrite = element rewrite {tool+ | pen+ | wrote* | text}
+placeName = element placeName {text}
+merge = element merge {where , text}
+nationality = element nationality {text}
+animal = element animal {text}
+language = element language {text}
+misspelling = element misspelling {text}
+holiday = element holiday {text}
+tool = attribute tool {"pen"}
+wrote = attribute wrote {"L" | "k" | "e" | "ig"}
+where = attribute where {"upline"}
+
