@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-    <letter><placeName>Paris</placeName> <date>July 19th</date>, <hand>1955-</hand>
-        Took a motor from travel agency- after <meal>breakfest</meal> in
-       our fancy round sitting room. Drove all around <placeName>Paris</placeName> 
-        the drive named <persName>Harvey</persName> has a daughter named
-        at <placeName>Waycross Georgia</placeName>.   Went to <placeName>Lubin's</placeName> for perfrume
-         (had the pink flannel faffair that <persName>Harriet</persName> had
-        given me- REsented ') W alked around the circle-Place
-      de <rewrite word="IenCome">van6ome</rewrite>  To <persName>Caron</persName>, The <placeName>Ritz Hotel</placeName> ,and a jewellers 
-       where I was intergue<hand>s</hand> by a jewlled <animal>bird</animal>. But did NOT
-       get it!   To a very nice resturant in the <placeName>Bois</placeName> for <meal>lunch</meal>
-        <placeName>Le Pre Catalan</placeName>. Went thento both sides of the Siene
-        and got some little prints of Paris. R.R. station and
-       Tourist Agency<hand>|</hand>reg. tickets.   We had our evening meal
-        at the Bristol and then set out for the Casion deParis.
-       Very amusing show- we stayed thro <u>half</u> of it but felt 
-        we needed <u>sleep</u>. Gail got a cab by her  shrill <u>whistle.</u></letter>
+ <letter>
+  <dateLine>
+   <placeName>Paris</placeName>
+   <date>July 19th</date>,<hand>1955-</hand>
+  </dateLine>
+  <p n="1">Took a motor from travel agency- after <meal>breakfest</meal> in our fancy round sitting
+   room. Drove all around <placeName>Paris</placeName> the drive named <persName>Harvey</persName>
+   has a daughter named at <placeName>Waycross Georgia</placeName>. Went to
+    <placeName>Lubin's</placeName> for perfrume (had the pink flannel faffair that
+    <persName>Harriet</persName> had given me- REsented ') W alked around the circle-Place de
+    <x rw="IenCome">van6ome</x> To <persName>Caron</persName>, The <placeName>Ritz
+    Hotel</placeName> ,and a jewellers where I was intergue<hand>s</hand> by a jewlled
+    <animal>bird</animal>. But did NOT get it! To a very nice resturant in the
+    <placeName>Bois</placeName> for <meal>lunch</meal>
+   <placeName>Le Pre Catalan</placeName>. Went thento both sides of the Siene and got some little
+   prints of <placeName>Paris. R.R. station</placeName> and Tourist Agency<hand>|</hand>reg.
+   tickets. We had our evening meal at the <placeName>Bristol</placeName> and then set out for the
+    <placeName>Casion deParis</placeName>. Very amusing show- we stayed thro <u>half</u> of it but
+   felt we needed <u>sleep</u>. <persName>Gail</persName> got a cab by her shrill
+   <u>whistle.</u></p>
+ </letter>
 </xml>
