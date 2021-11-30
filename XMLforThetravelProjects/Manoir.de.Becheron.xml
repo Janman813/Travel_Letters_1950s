@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-                            Phone, Azay-le-Rideau 46
+<intro>                            Phone, Azay-le-Rideau 46
    Manoir De Bécheron
         Saché
-            Indre-et-Loire
+            Indre-et-Loire</intro>
    
   <letter> 
-      The Manoir de Bécheron is a private home which welcomes a few paying guests. It is a rambling <timePeriod>15th-16th Century</timePeriod> house 
+      <p n="1">The Manoir de Bécheron is a private home which welcomes a few paying guests. It is a rambling <timePeriod>15th-16th Century</timePeriod> house 
    situated in the peaceful valley of the Indre in the heart of the Chateaux de la Loire region. The air of Old World charm
    with modern comfort. The cuisine is French, meals are 'en famille', except for breakfast, which is served in your room 
    or if you choose, in the gardens.
@@ -30,12 +31,12 @@
    on a picturesque medieval square.
    We are looking forward with pleasure to meeting you, with or without your children. We'll be glad to answer any specific questions
    you may have. 
-   Write for us. 
-  </letter>
+   Write for us. </p>
+  
    
-    Cordially yours, 
+   <p n="2"> Cordially yours, 
     (signiture)
-   <persName> Jacques Davidson </persName>
-    
+   <persName> Jacques Davidson </persName></p>
+    </letter>
    
 </xml>
