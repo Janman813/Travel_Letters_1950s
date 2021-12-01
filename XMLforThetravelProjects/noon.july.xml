@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <letter>
         <dateLine><placeName>Departure. On Queen Elizabeth.</placeName><time> At Noon</time><date>,July18, 1955.</date></dateLine>

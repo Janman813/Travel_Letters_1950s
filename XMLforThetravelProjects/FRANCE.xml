@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <!--images you're working with: which ones are page images and which ones are photos?
   Consider moving these so they sit with the parts of the transcription they connect to.

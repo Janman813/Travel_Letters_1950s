@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <letter>
         <dateLine>
@@ -23,7 +23,10 @@
             <hand>R</hand>esidence of the King. W<fade>e</fade> were allowed to see just a series of
             rooms on the lower floor. All wrapped up in covers and the curtains all covered up.
                 <hand>OLD FASHioNeD BUT NICE</hand>
-            To elsinore <hand>-</hand>but did not go in<hand>.</hand>Called <placeName>KronbergCastle</placeName> Drive back along the coast.Lots of bicycles- many with little children clinging on the back. One little boy calmly eating a sort of ice cream cone- while his mother rode along with himhanging on. Again we wandered over to Tivoli and had a simple meal over there. and went to bed early as we had a days jaunt before us for the next day- to <x rw="B"/>b</x>ournh<x rw="o">io</x>lm <hand>,</hand> the danish Island. An air plane to get there<hand>!</hand>
-        </p>
+            To elsinore <hand>-</hand>but did not go in<hand>.</hand>Called <placeName>KronbergCastle</placeName>
+            Drive back along the coast.Lots of bicycles- many with little children clinging on the back. One little boy calmly eating a sort of ice cream cone- while his mother rode along with him hanging on. 
+            Again we wandered over to Tivoli and had a simple meal over there. and went to bed early as we had a days jaunt before us for the next day- to <x rw="B">b</x>ournh<x rw="o">io</x>lm <hand>,</hand> the danish Island. An air plane to get there<hand>!</hand>
+            
+              </p>
     </letter>
 </xml>
