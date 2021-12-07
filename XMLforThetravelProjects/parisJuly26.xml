@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <XML>
     <letter>
-        <date> July 26, 1955</date>
+        <dateLine><date> July 26, 1955</date></dateLine>
         <place>Brussels</place>
 
         <front>
