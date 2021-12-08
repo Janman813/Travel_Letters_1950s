@@ -10,18 +10,22 @@
         include-content-type="no" indent="yes"/>
     
     <xsl:variable name="travelColl" select="collection('XMLforThetravelProjects/?select=*.xml')"/>
-
 <xsl:template match="/">
     <xsl:apply-templates select="//xml"/>
+    <html>
+        <letter>
+            <xsl:apply-templates select="descendant::dateLine"/>
+            <xsl:apply-templates></xsl:apply-templates>
+        </letter>
+</html>
+
     
 </xsl:template>
     
     <xsl:template match="xml">
         <figure>
-            <img src="images/{@url}" alt=""/>
-            <figcaption><xsl:comment>You need to code some metadata about each letter so we 
-            have something to describe your images, something to describe each one. I think we did this in the FRANCE letter. 
-            We can pull on that metadata in places like captions for your images and headings or explanations in your output.</xsl:comment></figcaption>
+            <img src="images/IMG_7189.jpg" alt="rat"/>
+            <figcaption>In this image you see three bears on balls dancing, with the wording of "Caseio de Paris". Then the image underneather you see three Ladies Dancing.  </figcaption>
         </figure>
         
         <xsl:apply-templates/>
