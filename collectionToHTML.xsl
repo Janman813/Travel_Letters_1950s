@@ -11,33 +11,41 @@
     
     <xsl:variable name="travelColl" select="collection('XMLforThetravelProjects/?select=*.xml')"/>
 <xsl:template match="/">
-    <xsl:apply-templates select="//xml"/>
-    <html>
-        <link rel="stylesheet" type="text/css" href="webstyle.css"/>
-        <head> 
-            <h1>Berhrends Travel Adventures</h1>
-            <h2>Paris July 19, 1955</h2>
-            <dateLine> <xsl:apply-templates select="descendant::dateLine"/></dateLine>
-        </head>
-        <body>
-            <letter><xsl:apply-templates select="descendant::letter"/></letter>
-            <p><xsl:apply-templates select="descendant::p"/></p>
-        </body>
-
-</html>
-
+    <xsl:apply-templates select="$travelColl//xml"/>
+  
     
 </xsl:template>
     
     <xsl:template match="xml">
-        <figure>
+      <xsl:result-document method="xhtml" href="docs/{base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}.html">
+        <html>
+            <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+            <head> 
+                <h1>Berhrends Travel Adventures</h1>
+                <h2>Paris July 19, 1955</h2>
+                <dateLine> <xsl:apply-templates select="descendant::dateLine"/></dateLine>
+            </head>
+            <body>
+                <letter><xsl:apply-templates select="descendant::letter"/></letter>
+                <xsl:apply-templates select="descendant::p"/>
+            </body>
+            
+        </html>
+        
+      </xsl:result-document>    
+        
+        
+       <!-- <figure>
             <img src="images/IMG_7189.jpg" alt="rat"/>
             <figcaption>In this image you see three bears on balls dancing, with the wording of "Caseio de Paris". Then the image underneather you see three Ladies Dancing.  </figcaption>
-        </figure>
+        </figure>-->
         
-        <xsl:apply-templates/>
+      
     </xsl:template>
 
 <!--ebb: Write more template rules to continue processing!  -->
+    <xsl:template match="p">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
 
 </xsl:stylesheet>
