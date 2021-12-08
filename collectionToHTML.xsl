@@ -13,10 +13,17 @@
 <xsl:template match="/">
     <xsl:apply-templates select="//xml"/>
     <html>
-        <letter>
-            <xsl:apply-templates select="descendant::dateLine"/>
-            <xsl:apply-templates></xsl:apply-templates>
-        </letter>
+        <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+        <head> 
+            <h1>Berhrends Travel Adventures</h1>
+            <h2>Paris July 19, 1955</h2>
+            <dateLine> <xsl:apply-templates select="descendant::dateLine"/></dateLine>
+        </head>
+        <body>
+            <letter><xsl:apply-templates select="descendant::letter"/></letter>
+            <p><xsl:apply-templates select="descendant::p"/></p>
+        </body>
+
 </html>
 
     
