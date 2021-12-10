@@ -16,7 +16,10 @@ figure img {max-width:300px; width:100%;}
  img{
      border-radius: 15px;
      flex-direction: row;
-     margin-bottom: 20px;
+     margin-bottom: 20px; 
+     margin: 10px;
+     height: 200px;
+     width: 200px;
  }
  
  .header{
@@ -33,7 +36,5 @@ figure img {max-width:300px; width:100%;}
  }
  
  img.thumbnail{
-     margin: 10px;
-     height: 200px;
-     width: 200px;
+    
  }
