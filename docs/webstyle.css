@@ -31,3 +31,9 @@ figure img {max-width:300px; width:100%;}
      font-family: arial, helvetica, san-serif;
      color:silver;
  }
+ 
+ img.thumbnail{
+     margin: 10px;
+     height: 200px;
+     width: 200px;
+ }
