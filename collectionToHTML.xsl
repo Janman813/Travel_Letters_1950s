@@ -51,5 +51,9 @@
     <xsl:template match="dateLine">
         <xsl:apply-templates/>
     </xsl:template>
+    
+    <xsl:template match="placeName">
+        <xsl:apply-templates/>
+    </xsl:template>
 
 </xsl:stylesheet>
