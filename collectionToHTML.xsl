@@ -21,7 +21,7 @@
         <html>
             <link rel="stylesheet" type="text/css" href="webstyle.css"/>
             <head> 
-                <h1>Berhrends Travel Adventures</h1>
+                <h1>Behrends Travel Adventures</h1>
                 <h2>Paris July 19, 1955</h2>
                 <dateLine> <xsl:apply-templates select="descendant::dateLine"/></dateLine>
             </head>
@@ -49,10 +49,6 @@
     </xsl:template>
       
     <xsl:template match="dateLine">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="placeName">
         <xsl:apply-templates/>
     </xsl:template>
 
