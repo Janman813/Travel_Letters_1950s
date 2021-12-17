@@ -17,39 +17,52 @@
 </xsl:template>
     
     <xsl:template match="xml">
-      <xsl:result-document method="xhtml" href="docs/{base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}.html">
+      <!--<xsl:result-document method="xhtml" href="docs/{base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}.html">-->
         <html>
-            <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+            
             <head> 
-                <h1>Behrends Travel Adventures</h1>
-                <h2>Paris July 19, 1955</h2>
-                <dateLine> <xsl:apply-templates select="descendant::dateLine"/></dateLine>
+                <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+                <title>Behrend Travel Letters</title>
+                
             </head>
             <body>
-                <letter><xsl:apply-templates select="descendant::letter"/></letter>
-                <xsl:apply-templates select="descendant::p"/>
+                <h1>Behrends Travel Adventures</h1>
+                <div class="main"><xsl:apply-templates select="descendant::letter"/></div>
             </body>
             
         </html>
         
-      </xsl:result-document>    
-        
-        
-       <!-- <figure>
-            <img src="images/IMG_7189.jpg" alt="rat"/>
-            <figcaption>In this image you see three bears on balls dancing, with the wording of "Caseio de Paris". Then the image underneather you see three Ladies Dancing.  </figcaption>
-        </figure>-->
+      <!--</xsl:result-document>-->    
+
         
       
     </xsl:template>
 
 <!--ebb: Write more template rules to continue processing!  -->
+   <xsl:template match="letter">
+       <div class="letter"><xsl:apply-templates/></div>
+   </xsl:template>
+    
+    <xsl:template match="dateLine">
+        <div class="dateLine"><xsl:apply-templates/></div>
+    </xsl:template>
+    
+    <xsl:template match="date">
+        <span class="date"><xsl:apply-templates/></span>
+    </xsl:template>
+    
     <xsl:template match="p">
         <p><xsl:apply-templates/></p>
     </xsl:template>
+    
+    <xsl:template match="figure">
+        <figure><img src="{graphic/@url}" alt="{caption}"/>
+        <figcaption><xsl:apply-templates select="caption"/></figcaption>
+        </figure>
+    </xsl:template>
       
-    <xsl:template match="dateLine">
-        <xsl:apply-templates/>
+    <xsl:template match="placeName">
+        <span class="place"><xsl:apply-templates/></span>
     </xsl:template>
 
 </xsl:stylesheet>
