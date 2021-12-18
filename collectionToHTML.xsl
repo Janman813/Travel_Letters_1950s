@@ -45,6 +45,12 @@
        </div>
    </xsl:template>
     
+    <xsl:template match="timePeriod">
+        <div class="Period">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="dateLine">
         <div class="dateLine">
             <xsl:apply-templates/>
@@ -125,5 +131,47 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-     
+    
+    <xsl:template match="item">
+        <div class="item">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="hand">
+        <div class="hand">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="fade">
+        <div class="fade">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="merge">
+        <div class="merge">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="money">
+        <div class="money">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 </xsl:stylesheet>
