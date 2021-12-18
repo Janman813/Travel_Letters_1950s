@@ -162,16 +162,52 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="day">
+        <div class="day">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="drink">
+        <div class="drink">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="signOff">
+        <div class="signOff">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="pencil">
+        <div class="pencil">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="typeWritten">
+        <div class="type">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="animal">
+        <div class="animal">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
+    <xsl:template match="nationality">
+        <div class="nationality">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     
-    
-    
-    
-    
+    <xsl:template match="holiday">
+        <div class="holiday">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
 
 </xsl:stylesheet>
