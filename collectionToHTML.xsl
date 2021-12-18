@@ -40,37 +40,76 @@
 
 <!--ebb: Write more template rules to continue processing!  -->
    <xsl:template match="letter">
-       <div class="letter"><xsl:apply-templates/></div>
+       <div class="letter">
+           <xsl:apply-templates/>
+       </div>
    </xsl:template>
     
+    <xsl:template match="timePeriod">
+        <div class="Period">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="dateLine">
-        <div class="dateLine"><xsl:apply-templates/></div>
+        <div class="dateLine">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
     
     <xsl:template match="date">
-        <span class="date"><xsl:apply-templates/></span>
+        <span class="date">
+           <h2>
+               <b>              
+                   <i>
+                   <xsl:apply-templates/>
+                   </i>
+               </b>
+           </h2>
+        </span>
     </xsl:template>
     
     <xsl:template match="p">
-        <p><xsl:apply-templates/></p>
+        <p>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
     
     <xsl:template match="meal">
-        <div class="meal"><xsl:apply-templates/></div>
+        <div class="meal">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
     
     <xsl:template match="figure">
-        <figure><img src="{graphic/@url}" alt="{caption}"/>
-        <figcaption><xsl:apply-templates select="caption"/></figcaption>
+        <figure>
+            <img src="{graphic/@url}" alt="{caption}"/>
+        <figcaption>
+            <xsl:apply-templates select="caption"/>
+        </figcaption>
         </figure>
     </xsl:template>
       
     <xsl:template match="placeName">
-        <span class="place"><xsl:apply-templates/></span>
+        <span class="place">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
     <xsl:template match="persName">
-        <div class="person"><xsl:apply-templates></xsl:apply-templates></div>
+        <div class="person">
+           <b>
+               <i>
+                   <xsl:apply-templates/>
+               </i>
+           </b>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="transport">
+        <div class="transport">
+            <xsl:apply-templates/>    
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

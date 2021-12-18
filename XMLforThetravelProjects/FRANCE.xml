@@ -18,6 +18,10 @@
     <!-- MOVE and integrate these images with the transcript. -->
 
 <letter>   
+     <figure>
+        <graphic url="images/July19.jpg"/>
+        <caption>July 19th letter</caption>
+    </figure>
     <!-- FIRST IMAGE TRANSCRIPT: -->
     <dateLine>
         <placeName>Paris</placeName>
@@ -26,10 +30,7 @@
 </letter>
     
 <letter>
-    <figure>
-        <graphic url="images/July19.jpg"/>
-    <caption>July 19th letter</caption>
-    </figure>
+   
     <p n="1">Took a <transport>motor</transport> from travel agency-after <meal>breakfast</meal> in our fancy round sitting room. Drove all around <placeName>Paris</placeName> the driver named <persName>Harvey</persName> had a daughter named at <placeName>Waycross Georgia</placeName>. Went to
         <placeName>Lubin's</placeName> for <misspelling word="perfume">perfrume</misspelling> (had the <item>pink flannel</item> affair that <persName>Harriet</persName> had given me- REsented') Walked around the circle- <placeName>Place de Vandome</placeName> to
             <placeName>Caron</placeName>, <placeName>The Ritz Hotel</placeName>, and a <placeName>jewellers</placeName>
@@ -48,8 +49,8 @@
     
  <letter>   
      <figure>
-         <graphic url="images/July19.jpg"/>
-         <caption>July 19th letter</caption>
+         <graphic url="images/July26.jpg"/>
+         <caption>July 26th letter</caption>
      </figure>
     <!-- Is this a new letter? DO YOU WANT A NEW FILE FOR EACH LETTER?   -->
     <dateLine><date when="1955-07-26">July 26, 1955</date></dateLine><p n="3"><!-- THIRD IMAGE TRANSCRIPT: -->  <placeName>Brussles</placeName> - Dear People: We are just about to
