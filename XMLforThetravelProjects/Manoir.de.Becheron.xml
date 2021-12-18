@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-    <graphic url="Manoir.Becheronimage.jpg"/>
+    
     
     
     <intro>
@@ -11,7 +11,10 @@
             <placeName>Indre-et-Loire</placeName>
    </intro>
   <letter> 
-      
+      <figure>
+          <graphic url="Manoir.de.Becheronimage.jpg"/>
+          <caption>A description of a Manoir de Becheron</caption>
+      </figure>
       <p>
           <placeName>The Manoir de Bécheron</placeName> is a private home which welcomes a few paying guests. It is a rambling <timePeriod>15th-16th Century</timePeriod> house 
     situated in the peaceful valley of the<placeName> Indre</placeName> in the heart of the <placeName>Chateaux de la Loire region</placeName>. The air of Old World charm

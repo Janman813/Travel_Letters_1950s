@@ -47,6 +47,10 @@
 </letter>
     
  <letter>   
+     <figure>
+         <graphic url="images/July19.jpg"/>
+         <caption>July 19th letter</caption>
+     </figure>
     <!-- Is this a new letter? DO YOU WANT A NEW FILE FOR EACH LETTER?   -->
     <dateLine><date when="1955-07-26">July 26, 1955</date></dateLine><p n="3"><!-- THIRD IMAGE TRANSCRIPT: -->  <placeName>Brussles</placeName> - Dear People: We are just about to
         take off for <placeName>Copenhagen</placeName> and are sit-ting around so I will try to send this second

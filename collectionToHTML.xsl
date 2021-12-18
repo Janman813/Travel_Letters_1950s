@@ -68,5 +68,9 @@
     <xsl:template match="placeName">
         <span class="place"><xsl:apply-templates/></span>
     </xsl:template>
+    
+    <xsl:template match="persName">
+        <div class="person"><xsl:apply-templates></xsl:apply-templates></div>
+    </xsl:template>
 
 </xsl:stylesheet>

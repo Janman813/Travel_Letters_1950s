@@ -2,6 +2,10 @@
 <?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <letter>
+        <figure>
+            <graphic url="images/July29.jpg"/>
+            <caption>July 29th letter</caption>
+        </figure>
         <dateLine>
             <date>July 29.</date>
             <hand>cofuchagee Friday</hand>
