@@ -53,13 +53,11 @@
     
     <xsl:template match="date">
         <span class="date">
-           <h2>
                <b>              
                    <i>
                    <xsl:apply-templates/>
                    </i>
                </b>
-           </h2>
         </span>
     </xsl:template>
     
