@@ -111,5 +111,69 @@
             <xsl:apply-templates/>    
         </div>
     </xsl:template>
+    
+    <xsl:template match="u">
+        <div class="underlined">
+            <u>
+                <xsl:apply-templates/>
+            </u>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="x">
+        <div class="x">
+            <strike>
+                <xsl:apply-templates/>
+            </strike>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="misspelling">
+        <div class="spelling">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="item">
+        <div class="item">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="hand">
+        <div class="hand">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="fade">
+        <div class="fade">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="merge">
+        <div class="merge">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="money">
+        <div class="money">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 </xsl:stylesheet>
