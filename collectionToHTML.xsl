@@ -55,6 +55,10 @@
         <p><xsl:apply-templates/></p>
     </xsl:template>
     
+    <xsl:template match="meal">
+        <div class="meal"><xsl:apply-templates/></div>
+    </xsl:template>
+    
     <xsl:template match="figure">
         <figure><img src="{graphic/@url}" alt="{caption}"/>
         <figcaption><xsl:apply-templates select="caption"/></figcaption>
