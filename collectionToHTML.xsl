@@ -70,9 +70,9 @@
     </xsl:template>
     
     <xsl:template match="meal">
-        <div class="meal">
+        <span class="meal">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="figure">
@@ -91,53 +91,53 @@
     </xsl:template>
     
     <xsl:template match="persName">
-        <div class="person">
+        <span class="person">
            <b>
                <i>
                    <xsl:apply-templates/>
                </i>
            </b>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="transport">
-        <div class="transport">
+        <span class="transport">
             <xsl:apply-templates/>    
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="u">
-        <div class="underlined">
+        <span class="underlined">
             <u>
                 <xsl:apply-templates/>
             </u>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="x">
-        <div class="x">
+        <span class="x">
             <strike>
                 <xsl:apply-templates/>
             </strike>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="misspelling">
-        <div class="spelling">
+        <span class="spelling">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="item">
-        <div class="item">
+        <span class="item">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="hand">
-        <div class="hand">
+        <span class="hand">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="fade">
@@ -165,9 +165,9 @@
     </xsl:template>
     
     <xsl:template match="drink">
-        <div class="drink">
+        <span class="drink">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="signOff">
