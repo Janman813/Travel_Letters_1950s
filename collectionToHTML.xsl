@@ -23,7 +23,9 @@
             <head> 
                 <link rel="stylesheet" type="text/css" href="webstyle.css"/>
                 <title>Behrend Travel Letters</title>
-                
+                <hr/>
+                <p class="navbar"><a href="index.html">Main</a> | <a href="about.html">About</a></p>
+                <hr/>
             </head>
             <body>
                 <h1>Behrends Travel Adventures</h1>
@@ -33,12 +35,9 @@
         </html>
         
       <!--</xsl:result-document>-->    
-
-        
-      
     </xsl:template>
 
-<!--ebb: Write more template rules to continue processing!  -->
+<!--ebb: Write more template rules to continue processing!-->
    <xsl:template match="letter">
        <div class="letter">
            <xsl:apply-templates/>
@@ -68,7 +67,7 @@
     </xsl:template>
     
     <xsl:template match="p">
-        <p>
+        <p xml:id="breaks-{preceding::p => count()+1}">
             <xsl:apply-templates/>
         </p>
     </xsl:template>
