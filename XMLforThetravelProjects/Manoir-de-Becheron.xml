@@ -2,15 +2,16 @@
 <?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     
-    
-    
-    <intro>
-                            Phone, <placeName>Azay-le-Rideau</placeName> <number>46</number>
-        <placeName>Manoir De Bécheron</placeName>
-        Saché
-            <placeName>Indre-et-Loire</placeName>
-   </intro>
+ 
+ 
   <letter> 
+      <intro>
+          Phone, <placeName>Azay-le-Rideau</placeName> <number>46</number>
+          <placeName>Manoir De Bécheron</placeName>
+          Saché
+          <placeName>Indre-et-Loire</placeName>
+      </intro>
+     
       <figure>
           <graphic url="Manoir.de.Becheronimage.jpg"/>
           <caption>A description of a Manoir de Becheron</caption>

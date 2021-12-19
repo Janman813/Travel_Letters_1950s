@@ -9,36 +9,35 @@
     <xsl:output method="xhtml" html-version="5" omit-xml-declaration="yes" 
         include-content-type="no" indent="yes"/>
     
-    <xsl:variable name="travelColl" select="collection('XMLforThetravelProjects/?select=*.xml')"/>
-<xsl:template match="/">
-    <xsl:apply-templates select="$travelColl//xml"/>
-  
-    
+    <xsl:variable name="travelColl" as="document-node()+" select="collection('XMLforThetravelProjects/?select=*.xml')"/>
+
+    <xsl:template match="/">
+    <html>
+        
+        <head> 
+            <link rel="stylesheet" type="text/css" href="webstyle.css"/>
+            <title>Behrend Travel Letters</title>
+        </head>
+        <body>
+            <h1>Behrends Travel Adventures</h1>
+            <div class="main"><xsl:apply-templates select="descendant::letter"/>
+            <xsl:apply-templates select="$travelColl//letter">
+                <xsl:sort select="(descendant::date[@when])[1]/@when ! tokenize(., '-')[last()] ! number(.)"/>
+            </xsl:apply-templates>
+            </div>
+        </body>
+        
+    </html>
 </xsl:template>
     
-    <xsl:template match="xml">
-      <!--<xsl:result-document method="xhtml" href="docs/{base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}.html">-->
-        <html>
-            
-            <head> 
-                <link rel="stylesheet" type="text/css" href="webstyle.css"/>
-                <title>Behrend Travel Letters</title>
-            </head>
-            <body>
-                <h1>Behrends Travel Adventures</h1>
-                <span class="main"><xsl:apply-templates select="descendant::letter"/></span>
-            </body>
-            
-        </html>
-        
-      <!--</xsl:result-document>-->    
-    </xsl:template>
-
+ 
 <!--ebb: Write more template rules to continue processing!-->
    <xsl:template match="letter">
-       <span class="letter">
+       <div class="letter">
+           <xsl:comment>WHAT FILE AM I? <xsl:value-of select="current() ! base-uri() ! tokenize(., '/')[last()]"/></xsl:comment>
+           <xsl:comment>WHAT IS MY DATE LAST DIGITS? <xsl:value-of select="(current()//date[@when])[1]/@when ! tokenize(., '-')[last()] ! number(.)"/></xsl:comment>
            <xsl:apply-templates/>
-       </span>
+       </div>
    </xsl:template>
     
     <xsl:template match="timePeriod">
@@ -64,7 +63,7 @@
     </xsl:template>
     
     <xsl:template match="p">
-        <p xml:id="n-{preceding::p => count()+1}">
+        <p id="{base-uri() ! tokenize(., '/')[last()]}-n-{preceding::p => count()+1}">
             <xsl:apply-templates/>
         </p>
     </xsl:template>
@@ -79,7 +78,7 @@
         <figure>
             <img src="{graphic/@url}" alt="{caption}"/>
         <figcaption>
-            <h1><xsl:apply-templates select="caption"/></h1>
+            <xsl:apply-templates select="caption"/>
         </figcaption>
         </figure>
     </xsl:template>
@@ -116,14 +115,14 @@
     
     <xsl:template match="x">
         <span class="x">
-            <strike>
+            <s>
                 <xsl:apply-templates/>
-            </strike>
+            </s>
         </span>
     </xsl:template>
     
     <xsl:template match="misspelling">
-        <span class="spelling">
+        <span class="spelling" title="{@word}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -183,9 +182,9 @@
     </xsl:template>
     
     <xsl:template match="typeWritten">
-        <span class="type">
+        <div class="type">
             <xsl:apply-templates/>
-        </span>
+        </div>
     </xsl:template>
     
     <xsl:template match="animal">
@@ -225,15 +224,15 @@
     </xsl:template>
     
     <xsl:template match="front">
-        <span class="front">
+        <div class="front">
             <xsl:apply-templates/>
-        </span>
+        </div>
     </xsl:template>
     
     <xsl:template match="back">
-        <span class="back">
+        <div class="back">
             <xsl:apply-templates/>
-        </span>
+        </div>
     </xsl:template>
     
     <xsl:template match="readers">
