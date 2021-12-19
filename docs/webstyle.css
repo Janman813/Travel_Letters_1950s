@@ -17,14 +17,13 @@ p{
     text-align:left;
     height:75%;
     width:75%;
-    background:gray;
 }
 
 .credits{
     text-align:right;
 }
 
-persName{
+.person{
     color:red;
 }
 
