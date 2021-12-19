@@ -64,7 +64,7 @@
     </xsl:template>
     
     <xsl:template match="p">
-        <p xml:id="breaks-{preceding::p => count()+1}">
+        <p xml:id="n-{preceding::p => count()+1}">
             <xsl:apply-templates/>
         </p>
     </xsl:template>
@@ -79,7 +79,7 @@
         <figure>
             <img src="{graphic/@url}" alt="{caption}"/>
         <figcaption>
-            <xsl:apply-templates select="caption"/>
+            <h1><xsl:apply-templates select="caption"/></h1>
         </figcaption>
         </figure>
     </xsl:template>
