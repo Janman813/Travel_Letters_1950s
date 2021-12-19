@@ -66,5 +66,11 @@ div > figure {
     margin: initial;
     flex-wrap: wrap;
 }
- 
+
+.card-text {
+  text-overflow: ellipsis;
+  height: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
  
