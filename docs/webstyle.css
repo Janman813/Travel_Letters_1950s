@@ -13,8 +13,17 @@ h1{
     text-align:left;
 }
 
+div{
+    height:300px;
+    width:400px;
+    background:cadetBlue;
+}
+
 p{
     text-align:justify;
+    height:75%;
+    width:75%;
+    background:gray;
 }
 
 .credits{
