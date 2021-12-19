@@ -6,7 +6,7 @@
             <graphic url="images/noon.julyimage.jpg"/>
             <caption></caption>
         </figure>
-        <dateLine><placeName>Departure. On Queen Elizabeth.</placeName><time> At Noon</time>,<date>July 18, 1955.</date></dateLine>
+        <dateLine><placeName>Departure. On Queen Elizabeth.</placeName><time> At Noon</time>, <date when="1855-07-18">July 18, 1955.</date></dateLine>
      <p n="1">   We got on board about <time>10</time>
     <persName>Harriet</persName> had stayed in <placeName>Greenwich</placeName> over night so went in town with us. <misspelling word="We">Wm</misspelling> drove the <transport>station wagon</transport> with our 
     bags. Very cleverlym selected as we had two s<x rw="ii">uu</x>t cases each and a "bottle bag and the typewriter-plus

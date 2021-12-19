@@ -6,7 +6,7 @@
             <graphic url="images/July26.jpg"/>
             <caption>July 26th letter</caption>
         </figure>
-        <dateLine><date> July 26, 1955</date></dateLine>
+        <dateLine><date when="1955-07-26"> July 26, 1955</date></dateLine>
         <placeName>Brussels</placeName>
 
         <front>
@@ -50,14 +50,14 @@
                 <day>Friday</day> we left Tours at about eleven and got back in Paris for
                     <meal>lunch</meal>. After the lovely meal we changed out on foot to do some
                 shopping.</p>
+          
         </front>
-    </letter>
-      <letter>  
-         <figure>
+        <figure>
             <graphic url="images/July26.jpg"/>
-            <caption>July 19th letter</caption>
+            <caption>July 26th letter</caption>
         </figure>
         <back>
+         
             <p n="4">and walked around. This we dis. Not too many purchases. We were going upto
                     <placeName>montmartre</placeName> but decided to get to bed early to leave for
                     <placeName>Brussels</placeName> the next day.</p>
@@ -87,6 +87,7 @@
 
 
             <signOff> Much love to all from both of us.</signOff>
-        </back></letter>
+        </back>
+    </letter>
     
 </xml>

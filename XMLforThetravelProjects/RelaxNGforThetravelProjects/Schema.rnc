@@ -1,6 +1,6 @@
 start = xml
 xml = element xml{mixed{intro*, letter*}}
-letter = element letter {figure*,dateLine*, p*, hand*, typeWritten*, placeName*, mixed{front*, back*}}
+letter = element letter {(figure | dateLine | p | hand | typeWritten | placeName | front | back)*}
 graphic = element graphic{url, alt*}
 figure = element figure {graphic*, caption*}
 caption = element caption {text}
@@ -13,7 +13,7 @@ transport = element transport {text}
 meal = element meal {text}
 persName = element persName {text}
 misspelling = element misspelling {word, text}
-word = attribute word {"perfume" | "We" | "drew" | "an" | "member"}
+word = attribute word {"perfume" | "We" | "drew" | "an" | "member" | text}
 item = element item {text}
 x = element x {rw, text}
 u = element u {text}
