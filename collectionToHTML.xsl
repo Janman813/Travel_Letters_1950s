@@ -26,7 +26,7 @@
             </head>
             <body>
                 <h1>Behrends Travel Adventures</h1>
-                <div class="main"><xsl:apply-templates select="descendant::letter"/></div>
+                <span class="main"><xsl:apply-templates select="descendant::letter"/></span>
             </body>
             
         </html>
@@ -36,15 +36,15 @@
 
 <!--ebb: Write more template rules to continue processing!-->
    <xsl:template match="letter">
-       <div class="letter">
+       <span class="letter">
            <xsl:apply-templates/>
-       </div>
+       </span>
    </xsl:template>
     
     <xsl:template match="timePeriod">
-        <div class="Period">
+        <span class="Period">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="dateLine">
@@ -141,27 +141,27 @@
     </xsl:template>
     
     <xsl:template match="fade">
-        <div class="fade">
+        <span class="fade">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="merge">
-        <div class="merge">
+        <span class="merge">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="money">
-        <div class="money">
+        <span class="money">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="day">
-        <div class="day">
+        <span class="day">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="drink">
@@ -171,81 +171,81 @@
     </xsl:template>
     
     <xsl:template match="signOff">
-        <div class="signOff">
+        <span class="signOff">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="pencil">
-        <div class="pencil">
+        <span class="pencil">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="typeWritten">
-        <div class="type">
+        <span class="type">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="animal">
-        <div class="animal">
+        <span class="animal">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="nationality">
-        <div class="nationality">
+        <span class="nationality">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="holiday">
-        <div class="holiday">
+        <span class="holiday">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="number">
-        <div class="number">
+        <span class="number">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="language">
-        <div class="language">
+        <span class="language">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="measure">
-        <div class="measure">
+        <span class="measure">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="front">
-        <div class="front">
+        <span class="front">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="back">
-        <div class="back">
+        <span class="back">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="readers">
-        <div class="readers">
+        <span class="readers">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
     
     <xsl:template match="month">
-        <div class="month">
+        <span class="month">
             <xsl:apply-templates/>
-        </div>
+        </span>
     </xsl:template>
 
 </xsl:stylesheet>
