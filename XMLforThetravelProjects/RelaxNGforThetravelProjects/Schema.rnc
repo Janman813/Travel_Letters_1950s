@@ -1,6 +1,8 @@
 start = xml
 xml = element xml{mixed{intro*, letter*}}
 letter = element letter {(figure | note | dateLine | p | hand | typeWritten | placeName | front | back)*}
+note = element note {resp, mixed{date}}
+resp = attribute resp {text}
 graphic = element graphic{url, alt*}
 figure = element figure {graphic*, caption*}
 caption = element caption {text}
