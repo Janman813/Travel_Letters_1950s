@@ -23,9 +23,6 @@
             <head> 
                 <link rel="stylesheet" type="text/css" href="webstyle.css"/>
                 <title>Behrend Travel Letters</title>
-                <hr/>
-                <p class="navbar"><a href="index.html">Main</a> | <a href="about.html">About</a></p>
-                <hr/>
             </head>
             <body>
                 <h1>Behrends Travel Adventures</h1>
