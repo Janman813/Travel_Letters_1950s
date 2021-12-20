@@ -27,6 +27,24 @@ p{
     color:red;
 }
 
+.place{
+    color:gray;
+}
+
+.transport{
+    color:DarkOrange;
+}
+
+u{
+    color:fuchsia;
+}
+
+.hand{
+    color:DarkSeaGreen;
+}
+
+
+
 figure {background-color:lavender; margin:3em; width: 30%;} 
 figcaption {font-style:italic; font-size:.8em;}
 figure img {max-width:300px; width:100%;}

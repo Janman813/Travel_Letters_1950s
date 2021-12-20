@@ -247,5 +247,9 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    
+    <xsl:template match="eSpace">
+        <xsl:apply-templates/>
+    </xsl:template>
 
 </xsl:stylesheet>
