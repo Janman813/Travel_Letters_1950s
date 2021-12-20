@@ -1,12 +1,16 @@
-
 body {
-background-color:Tan;
-color:MidnightBlue;
-font-family:arial, helvetica, sans-serif;
+    background-color:Tan;
+    color:MidnightBlue;
+    font-family:arial, helvetica, sans-serif;
 }
+
 ol {
-list-style-type: lower-alpha;
-padding: 5em;  
+    list-style-type: square;
+    padding: 2px
+}
+
+li{
+   display:list-item; 
 }
 
 h1{
