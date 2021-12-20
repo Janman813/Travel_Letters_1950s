@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="RelaxNGforThetravelProjects/Schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-    
- 
- 
   <letter> 
       <intro>
           Phone, <placeName>Azay-le-Rideau</placeName> <number>46</number>
@@ -13,7 +10,7 @@
       </intro>
      
       <figure>
-          <graphic url="Manoir.de.Becheronimage.jpg"/>
+          <graphic url="ManoirdeBecheronimage.jpg"/>
           <caption>A description of a Manoir de Becheron</caption>
       </figure>
       <note resp="jep">We think this letter must be written before they leave, but after the others we have encoded. We speculate the date must be before <date when="1955-07-29">July 29, 1955</date>.</note>
