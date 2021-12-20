@@ -114,7 +114,7 @@
     </xsl:template>
     
     <xsl:template match="x">
-        <span class="x">
+        <span class="x" title="{@rw}">
             <s>
                 <xsl:apply-templates/>
             </s>
@@ -248,7 +248,7 @@
     </xsl:template>
     
     <xsl:template match="eSpace">
-      <span class="space">
+      <span class="space" title="She left a space.">
         <xsl:apply-templates/>
       </span>
     </xsl:template>
