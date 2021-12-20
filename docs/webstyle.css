@@ -1,6 +1,6 @@
 
 body {
-background-color:BurlyWood;
+background-color:Thistle;
 color:MidnightBlue;
 font-family:arial, helvetica, sans-serif;
 }
@@ -41,6 +41,10 @@ u{
 
 .hand{
     color:DarkSeaGreen;
+}
+
+.spelling{
+    color:lime;
 }
 
 
