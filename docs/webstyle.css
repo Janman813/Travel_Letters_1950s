@@ -1,6 +1,6 @@
 
 body {
-background-color:CornflowerBlue;
+background-color:Tan;
 color:MidnightBlue;
 font-family:arial, helvetica, sans-serif;
 }
@@ -19,6 +19,13 @@ p{
     width:75%;
 }
 
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
 .credits{
     text-align:right;
 }
@@ -32,7 +39,7 @@ p{
 }
 
 .transport{
-    color:DarkOrange;
+    color:Maroon;
 }
 
 u{
@@ -45,6 +52,7 @@ u{
 
 .spelling{
     color:lime;
+    outline-style: double;
 }
 
 .pencil{
@@ -55,9 +63,25 @@ u{
     color:black;
 }
 
-figure {background-color:lavender; margin:3em; width: 30%;} 
-figcaption {font-style:italic; font-size:.8em;}
-figure img {max-width:300px; width:100%;}
+.space{
+    color:Olive;
+}
+
+figure {
+    background-color:lavender; 
+    margin:3em; 
+    width: 30%;
+} 
+
+figcaption {
+    font-style:italic; 
+    font-size:.8em;
+}
+
+figure img {
+    max-width:300px; 
+    width:100%;
+}
  
  img{
      border-radius: 15px;

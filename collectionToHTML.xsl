@@ -248,7 +248,9 @@
     </xsl:template>
     
     <xsl:template match="eSpace">
+      <span class="space">
         <xsl:apply-templates/>
+      </span>
     </xsl:template>
 
 </xsl:stylesheet>
