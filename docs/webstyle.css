@@ -19,6 +19,8 @@ p{
     width:75%;
 }
 
+
+
 div {
   width: 300px;
   border: 15px solid green;
@@ -52,7 +54,7 @@ u{
 
 .spelling{
     color:lime;
-    outline-style: double;
+    outline-style:groove;
 }
 
 .pencil{
