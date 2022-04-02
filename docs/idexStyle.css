@@ -1,6 +1,6 @@
 body {
     background-color:Tan;
-    color:MidnightBlue;
+    color:black;
     font-family:arial, helvetica, sans-serif;
 }
 
@@ -21,3 +21,4 @@ p{
     text-align:left;
     height:75%;
     width:75%;
+}
