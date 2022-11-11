@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<!--Denmark Journal-->
+<xml>
+    <letter>
+        <placeName><hand><x rw="scribble">Denmark</x></hand></placeName>
+        <p>Monday <date>August 1st</date>. Left <placeName>Svendborg</placeName> about 10:30 It w<fade>as a</fade> very new but good hotel.Red carpets and for some reason pictures of English hunting all around. And some excellent ship paintings.<eSpace i="no space provided"/>and <misspelling word="?">pr</misspelling> ship <misspelling word="Print">Printw</misspelling>. My bed was placed head to the window and the light- which I thought very cleve of the Danes- especially as the morning light <misspelling word="typed starts and restarted">st</misspelling> starts in around 4 A.M. They use funny affairson the beds. Very light weight down puffs encased in a sort of double pocket or sheets. It lays neatly on top of the bed- only that large - and the trick is to keep covered with it. As if you pull it over your <misspelling word="shoulders your">shouldersyour</misspelling> rear end may be be chilly however, I am really beginning to like them!</p>
+       <p> women smoke little brown cigars<misspelling word=",">.</misspelling> in the very best restuarnt and places. Looks to us very amusing. I<hand>N</hand> the village of <placeName>Vesterskerninja</placeName> the pretty <misspelling word="thatch">thached</misspelling> houses surrounded by gay flowers made lovely pictures. KRO is INN. Barbers signs are brass plates with a half <misspelling word="circle">circl</misspelling> cut to go under the chin
+Bakers use a crown with a pretxelbelow it- all neatly gilded... The Horses are grand. Great bi things and such nice colors. Some like little "cotton Tails" we used to have. some quite light all very sturdy In many places</p>
+    </letter>
+</xml>
